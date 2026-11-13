@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#111827">
+    <meta name="description" content="A friendly home for fun, easy-to-play games.">
+    <title>Playroom — games for your break</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="Playroom home">
+        <span class="brand-mark" aria-hidden="true">P</span>
+        <span>playroom</span>
+      </a>
+      <p class="header-note">Pick a game. Take a break.</p>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">YOUR NEXT LITTLE ADVENTURE</p>
+          <h1 id="hero-title">Good games.<br><span>Good breaks.</span></h1>
+          <p class="hero-description">A growing collection of easy-to-play games for hanging out, challenging a friend, or just taking five.</p>
+          <a class="button button-light" href="#games">Explore games <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <span class="shape shape-star">✳</span>
+          <span class="shape shape-circle"></span>
+          <span class="shape shape-sparkle">✦</span>
+          <span class="shape shape-dice">⚄</span>
+          <span class="shape shape-orbit"></span>
+          <span class="hero-caption">Small break,<br>big fun.</span>
+        </div>
+      </section>
+
+      <section class="games-section" id="games" aria-labelledby="games-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">THE GAME SHELF</p>
+            <h2 id="games-title">Find your next favorite</h2>
+          </div>
+          <p class="games-count" id="games-count" aria-live="polite"></p>
+        </div>
+        <div class="games-grid" id="games-grid">
+          <p class="status-message">Loading games…</p>
+        </div>
+      </section>
+
+      <section class="play-panel" id="play-panel" aria-labelledby="play-title" hidden>
+        <div class="play-heading">
+          <div>
+            <p class="eyebrow">NOW PLAYING</p>
+            <h2 id="play-title">Game</h2>
+          </div>
+          <button class="button button-outline" id="close-game" type="button">Back to games</button>
+        </div>
+        <div class="game-frame-wrap">
+          <iframe id="game-frame" title="Game" loading="lazy" referrerpolicy="no-referrer" sandbox="allow-scripts"></iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand brand-footer" href="./"><span class="brand-mark" aria-hidden="true">P</span><span>playroom</span></a>
+      <p>Made for play. Remember to take breaks, too.</p>
+    </footer>
+  </body>
+</html>
