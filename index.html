@@ -36,6 +36,33 @@
         </div>
       </section>
 
+      <section class="forge-section" id="forge" aria-labelledby="forge-title">
+        <div class="forge-copy">
+          <p class="eyebrow">THE ON-DEMAND GAME FORGE</p>
+          <h2 id="forge-title">A fresh little game, whenever you want</h2>
+          <p>Make an original arcade remix right in your browser. Each game gets a shareable seed, new colors, and a fresh challenge.</p>
+          <div class="forge-actions">
+            <button class="button button-forge" id="generate-remix" type="button">Generate a game <span aria-hidden="true">✦</span></button>
+            <span class="remix-count" id="remix-count">0 remixes played on this device</span>
+          </div>
+          <p class="forge-note">Games are generated on demand from original templates; this static site does not store billions of games or call an AI service.</p>
+        </div>
+        <div class="remix-play-area" id="remix-play-area" hidden>
+          <div class="remix-heading">
+            <div>
+              <p class="eyebrow">YOUR NEW REMIX</p>
+              <h3 id="remix-title">Comet Catch</h3>
+            </div>
+            <button class="button button-outline" id="copy-remix-link" type="button">Copy share link</button>
+          </div>
+          <canvas id="remix-canvas" width="720" height="420" tabindex="0" aria-label="Generated arcade game. Use left and right arrow keys or A and D to move."></canvas>
+          <div class="remix-footer">
+            <p id="remix-instructions">Move with ←/→ or A/D. On touch screens, drag across the game.</p>
+            <p id="remix-status" role="status" aria-live="polite"></p>
+          </div>
+        </div>
+      </section>
+
       <section class="games-section" id="games" aria-labelledby="games-title">
         <div class="section-heading">
           <div>

@@ -2,6 +2,8 @@
 
 A responsive, static game portal. Games are listed in `games.json` and opened in an embedded frame, so the website can grow without putting every game's code into the portal.
 
+The on-demand Game Forge creates original arcade remixes in the browser from a small set of game rules, deterministic seeds, and randomized colors and difficulty. Anyone can generate and share a remix link. This is procedural generation, not an AI service, and the static site does not generate or host billions of separate games.
+
 ## Run locally
 
 The site uses `fetch()` to read the game catalog, so open it through a local web server instead of double-clicking `index.html`.
@@ -21,6 +23,8 @@ The first game card points to the published Snake & Ladders project. For a local
 3. Add a game object to `games.json` with `title`, `description`, `tag`, `icon`, `url`, `color`, and `ink`. Set `url` to the published game's public URL. Use a relative URL for a game shipped under this same site.
 4. Test the portal's card, embedded game, keyboard controls, mobile layout, and browser console.
 5. Publish this project to GitHub Pages, Netlify, or another static host. It needs no server-side runtime or build command.
+
+Use **Generate a game** in the Game Forge to play a new remix. Arrow keys or A/D steer; on touch screens, drag across the game canvas. **Copy share link** creates a URL that replays the same seeded remix.
 
 The iframe is sandboxed to scripts only. Keep games self-contained; they cannot access the portal's parent page or storage.
 
