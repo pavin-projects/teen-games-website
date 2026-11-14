@@ -2,6 +2,8 @@
 
 A responsive, static game portal. Games are listed in `games.json` and opened in an embedded frame, so the website can grow without putting every game's code into the portal.
 
+The shelf features **Universe Crazy**, an original 3D arena fighter with four-way battles, eight fighters, 200 arenas, and a hidden final boss. Snake & Ladders is also linked from its published site.
+
 The on-demand Game Forge creates original arcade remixes in the browser from a small set of game rules, deterministic seeds, and randomized colors and difficulty. Anyone can generate and share a remix link. This is procedural generation, not an AI service, and the static site does not generate or host billions of separate games.
 
 ## Run locally
@@ -14,7 +16,7 @@ The site uses `fetch()` to read the game catalog, so open it through a local web
 4. Visit `http://localhost:8000/teen-games-website/`.
 5. To stop the server, press `Ctrl+C` in the terminal.
 
-The first game card points to the published Snake & Ladders project. For a local-only setup, change its `url` in `games.json` to `../snake-and-ladders/index.html` while serving the parent folder.
+Universe Crazy and Snake & Ladders point to their published GitHub Pages sites.
 
 ## Add another hosted game
 
