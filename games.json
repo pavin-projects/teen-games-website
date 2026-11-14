@@ -1,5 +1,14 @@
 [
   {
+    "title": "Universe Crazy",
+    "description": "Choose from six original fighters and battle across 200 procedural 3D arenas.",
+    "tag": "3D fighter",
+    "icon": "✦",
+    "url": "https://pavin-projects.github.io/universe-crazy/",
+    "color": "#e5e9ff",
+    "ink": "#6d57e8"
+  },
+  {
     "title": "Snake & Ladders",
     "description": "Roll the dice, climb the ladders, and race a friend to the finish.",
     "tag": "2 players",
