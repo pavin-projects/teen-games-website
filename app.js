@@ -27,7 +27,9 @@ function startGame(game) {
   stopRemix();
   playTitle.textContent = game.title;
   gameFrame.title = game.title;
-  gameFrame.src = game.url;
+  const gameUrl = new URL(game.url, window.location.href);
+  gameUrl.searchParams.set("playroom", Date.now().toString(36));
+  gameFrame.src = gameUrl.href;
   playPanel.hidden = false;
   playPanel.scrollIntoView({ behavior: "smooth", block: "start" });
 }
