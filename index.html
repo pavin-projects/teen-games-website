@@ -6,8 +6,8 @@
     <meta name="theme-color" content="#111827">
     <meta name="description" content="A friendly home for fun, easy-to-play games.">
     <title>Playroom — games for your break</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="app.js?v=4ec6e1b" defer></script>
+    <link rel="stylesheet" href="styles.css?v=embed-fullscreen-2">
+    <script src="app.js?v=embed-fullscreen-2" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -82,7 +82,10 @@
             <p class="eyebrow">NOW PLAYING</p>
             <h2 id="play-title">Game</h2>
           </div>
-          <button class="button button-outline" id="close-game" type="button">Back to games</button>
+          <div class="play-actions">
+            <a class="button button-outline" id="open-fullscreen-game" href="#" target="_blank" rel="noopener noreferrer">Open full screen</a>
+            <button class="button button-outline" id="close-game" type="button">Back to games</button>
+          </div>
         </div>
         <div class="game-frame-wrap">
           <iframe id="game-frame" title="Game" loading="lazy" referrerpolicy="no-referrer" sandbox="allow-scripts" allow="fullscreen"></iframe>

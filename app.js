@@ -3,6 +3,7 @@ const gamesCount = document.querySelector("#games-count");
 const playPanel = document.querySelector("#play-panel");
 const gameFrame = document.querySelector("#game-frame");
 const playTitle = document.querySelector("#play-title");
+const openFullscreenGame = document.querySelector("#open-fullscreen-game");
 const remixCanvas = document.querySelector("#remix-canvas");
 const remixContext = remixCanvas.getContext("2d");
 const remixPlayArea = document.querySelector("#remix-play-area");
@@ -30,6 +31,7 @@ function startGame(game) {
   const gameUrl = new URL(game.url, window.location.href);
   gameUrl.searchParams.set("playroom", Date.now().toString(36));
   gameFrame.src = gameUrl.href;
+  openFullscreenGame.href = gameUrl.href;
   playPanel.hidden = false;
   playPanel.scrollIntoView({ behavior: "smooth", block: "start" });
 }
